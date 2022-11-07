@@ -154,42 +154,26 @@ With our collaborations with Bollywood and Tollywood celebrities and mentors, we
                                 <label for="phone">Phone number</label>
                                 <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
                             </div>
-                                  <div class="form-group"> <!-- Date input -->
-        <label class="control-label" for="date"></label>
-        <input class="form-control" id="date" name="date" placeholder="Date of Birth (MM/DD/YYYY)" type="text"/>
-      </div><br><br>
-                            <script>
-                                $(document).ready(function(){
-                                var date_input=$('input[name="date"]'); //our date input has the name "date"
-                                var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
-                                var options={
-                                    format: 'mm/dd/yyyy',
-                                    container: container,
-                                    todayHighlight: true,
-                                    autoclose: true,
-                                };
-                                date_input.datepicker(options);
-                                })
-                            </script>
-
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                            <div class="form-group"> <!-- Date input -->
+                                 <label class="control-label" for="date"></label>
+                                 <input class="form-control" id="date" name="date" placeholder="Date of Birth (MM/DD/YYYY)" type="text"/>
+                            </div><br><br>
+                                    <script>
+                                        $(document).ready(function(){
+                                        var date_input=$('input[name="date"]'); //our date input has the name "date"
+                                        var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+                                        var options={
+                                            format: 'mm/dd/yyyy',
+                                            container: container,
+                                            todayHighlight: true,
+                                            autoclose: true,
+                                        };
+                                        date_input.datepicker(options);
+                                        })
+                                    </script>
                             <!-- Submit Button-->
                             <div class="d-grid">
                             <button class="btn btn-primary btn-x1" id="submitButton" type="submit">Submit</button></div>
-                            <!--<div class="d-grid"><button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Submit</button></div>-->
                         </form>
                     </div>
                 </div>
