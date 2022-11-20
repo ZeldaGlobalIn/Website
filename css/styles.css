@@ -232,22 +232,22 @@ sup {
 }
 
 .carousel-cell {
-  width: 66%;
+  width: 100%; /* full width */
   height: 200px;
-  margin-right: 10px;
-  background: #8C8;
-  border-radius: 5px;
-  counter-increment: carousel-cell;
+  background: #222;
+  /* center images in cells with flexbox */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* cell number */
-.carousel-cell:before {
+.carousel.is-fullscreen .carousel-cell {
+  height: 100%;
+}
+
+.carousel-cell img {
   display: block;
-  text-align: center;
-  content: counter(carousel-cell);
-  line-height: 200px;
-  font-size: 80px;
-  color: white;
+  max-height: 100%;
 }
 
 
