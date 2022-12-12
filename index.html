@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="css/flickity.css" media="screen">
         <title>Zelda Global</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/img/Logo_Z_White.png" />
+        <link rel="icon" type="image/x-icon" href="assets/img/Transpsquare_B.png" />
         <!-- Bootstrap Icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Google fonts-->
@@ -16,16 +16,42 @@
         <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
         <!-- SimpleLightbox plugin CSS-->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+        <!-- Font Awesome -->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            rel="stylesheet"
+        />
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- MDB -->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css"
+            rel="stylesheet"
+        />
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <!-- MDB -->
+        <script
+            type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.js"
+        ></script>
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <style>
+        body {
+            font-family: 'Montserrat';font-size: 22px;
+        }
+        </style>
 
     </head>
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#page-top"><img src="assets/img/Logo_Z.png"height=50px height=50px></a>
+                <a class="navbar-brand" href="#page-top"><img src="assets/img/Transpsquare_B.png" height=50px height=50px></a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
@@ -44,11 +70,11 @@
                 <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
                     <div class="col-lg-8 align-self-end">
                         <h1 class="text-white font-weight-bold">Zelda Global</h1>
-                        <hr class="divider" />
+                        <hr class="divider bg-primary" />
                     </div>
                     <div class="col-lg-8 align-self-baseline">
                         <p class="text-white-75 mb-5"></p>
-                        <a class="btn btn-primary btn-xl" href="https://www.instagram.com/zeldaglobal.international/">Instagram</a>
+                        <a class="btn btn-outline-light" href="https://www.instagram.com/zeldaglobal.international/">Instagram</a>
                     </div>
                 </div>
             </div>
@@ -62,16 +88,24 @@
                         <hr class="divider divider-light" />
                         <p class="text-white-75 mb-4">Zelda Global is a non governmental organization that focuses on mentoring models on a right path to make it big in the fashion industry. We are all about capturing art and spreading talent worldwide.
 with our collaborations with Bollywood and Tollywood celebrities and mentors, we provide support to our members, mentor and guide them into the fashion industry.</p>
-                        <a class="btn btn-light btn-xl" href="#contact">Participate!</a>
                     </div>
                 </div>
             </div>
         </section>
+
+        <div id="portfolio" class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false, "initialIndex": 2 }'>
+            <img class="img-fluid" src="assets/img/pic1.jpg" alt="..." width="500" height="600"/>            
+            <img class="img-fluid" src="assets/img/pic2.jpg" alt="..." width="500" height="600"/>
+            <img class="img-fluid" src="assets/img/pic3.jpg" alt="..." width="500" height="600"/>
+            <img class="img-fluid" src="assets/img/pic4.jpg" alt="..." width="500" height="600"/>
+            <img class="img-fluid" src="assets/img/pic5.jpg" alt="..." width="500" height="600"/>
+        </div>
+
         <!-- Services-->
         <section class="page-section" id="services">
             <div class="container px-4 px-lg-5">
                 <h2 class="text-center mt-0">What we offer and how we operate</h2>
-                <hr class="divider" />
+                <hr class="divider bg-primary" />
                 <div class="row gx-4 gx-lg-5">
                     <div class="col-lg-3 col-md-6 text-center">
                         <div class="mt-5">
@@ -106,16 +140,24 @@ with our collaborations with Bollywood and Tollywood celebrities and mentors, we
                 </div>
             </div>
         </section>
-        <!-- Portfolio-->
-        
-       
-<div class="carousel"
-  data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
-<img class="img-fluid" src="assets/img/Sudron Poster.jpg" alt="..." width="500" height="600"/>            
-<img class="img-fluid" src="assets/img/Sudron Poster - Copy.jpg" alt="..." width="500" height="600"/>
-<img class="img-fluid" src="assets/img/Poster Text 1.jpg" alt="..." width="500" height="600"/>
-<img class="img-fluid" src="assets/img/Poster Text 2.jpg" alt="..." width="500" height="600"/>
-        </div>
+
+        <section class="page-section bg-primary" id="events">
+            <div class="container px-4 px-lg-5">
+                <h2 class="text-white text-center mt-0">Events</h2>
+                <hr class="divider divider-light" />
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="assets/img/Logo_ZGSMI_White.jpg" alt="ZGSMI Logo">
+                            <div class="card-body">
+                              <h5 class="card-title">Zelda Global Super Model India</h5>
+                              <a href="#" class="btn btn-outline-dark">Apply Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         
  <!---     
         <div id="portfolio">
@@ -162,159 +204,11 @@ with our collaborations with Bollywood and Tollywood celebrities and mentors, we
             </div>
         </div>
         ---->
-<!-- Contact-->
-        <section class="page-section" id="contact">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-8 col-xl-6 text-center">
-                        <h2 class="mt-0">Apply Now!</h2>
-                        <hr class="divider" />
-                        <p class="text-muted mb-5"></p>
-                    </div>
-                </div>
-                <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
-                    <div class="col-lg-6">
-                        <form action="https://formsubmit.co/4e7a9f6b1bb2f326cc1cd0443e8d3af7" method="POST">
-                            <!-- Name input-->
-                            <div class="form-group">
-                                <label for="name">Full name</label>
-                                <input class="form-control" id="name" name="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                            </div>
-                            
-                                                        
-                             <!-- Age-->
-                            <div class="form-group">
-                                <label for:"age">Age</label>
-                                <input class="form-control" id="age" name="age" placeholder="Age" data-sb-validations="required" /> 
-                                <div class="invalid-feedback" data-sb-feedback="age:required">Age is required</div>
-                            </div>
-                            
-                             <div class="form-group"> <!-- Date input -->
-                                 <label class="control-label" for="date"></label>
-                                <label for="date">Date of Birth</label>
-                                 <input class="form-control" id="date" name="date" placeholder="Date of Birth (MM/DD/YYYY)" type="text"/>
-                            </div>
-                                    <script>
-                                        $(document).ready(function(){
-                                        var date_input=$('input[name="date"]'); //our date input has the name "date"
-                                        var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
-                                        var options={
-                                            format: 'mm/dd/yyyy',
-                                            container: container,
-                                            todayHighlight: true,
-                                            autoclose: true,
-                                        };
-                                        date_input.datepicker(options);
-                                        })
-                                    </script>
-                            
-                            <!-- Sex-->
-                            <div class="form-group">
-                                <label for:"sex">Sex</label>
-                                <input class="form-control" id="sex" name="sex" placeholder="Gender" data-sb-validations="required" /> 
-                                <div class="invalid-feedback" data-sb-feedback="sex:required">Gender is required</div>
-                            </div> 
-                            
-                                                        
-                            <!-- Native-->
-                            <div class="form-group">
-                                <label for:"native">Native Place</label>
-                                <input class="form-control" id="native" name="native" placeholder="Native Place" data-sb-validations="required" /> 
-                                <div class="invalid-feedback" data-sb-feedback="native:required">Native is reqired</div>
-                            </div> 
-                            
-                                                        
-                            <!-- Current Location-->
-                            <div class="form-group">
-                                <label for:"location">Current Residential Location</label>
-                                <input class="form-control" id="location" name="location" placeholder="Location" data-sb-validations="required" /> 
-                                <div class="invalid-feedback" data-sb-feedback="location:required">Location is required</div>
-                            </div> 
-                            
-                            <!-- Height-->
-                            <div class="form-group">
-                                <label for:"height">Height</label>
-                                <input class="form-control" id="height" name="height" placeholder="Height" data-sb-validations="required" /> 
-                                <div class="invalid-feedback" data-sb-feedback="height:required">Height is required</div>
-                            </div> 
-                            
-                            <!-- Weight-->
-                            <div class="form-group">
-                                <label for:"weight">Weight</label>
-                                <input class="form-control" id="weight" name="weight" placeholder="Weight" data-sb-validations="required" /> 
-                                <div class="invalid-feedback" data-sb-feedback="weight:required">Weight is required</div>
-                            </div>
-                            
-                            <!-- Occupation-->
-                            <div class="form-group">
-                                <label for:"occupation">Occupation</label>
-                                <input class="form-control" id="occupation" name="occupation" placeholder="Occupation" data-sb-validations="required" /> 
-                                <div class="invalid-feedback" data-sb-feedback="occupation:required">Occupation is required</div>
-                            </div> 
-                            
-                            <!-- Experience-->
-                            <div class="form-group">
-                                <label for:"experience">Experience</label>
-                                <input class="form-control" id="experience" name="experience" placeholder="Experience" data-sb-validations="required" /> 
-                                <div class="invalid-feedback" data-sb-feedback="experience:required">Experience is required</div>
-                            </div>
-                            
-                            <!-- Cover Letter-->
-                            <div class="form-group">
-                                <label for:"cover-letter">Tell us briefly why you would like to participate!</label>
-                                <textarea class="form-control" id="cover-letter" name="cover-letter" placeholder="Write a short paragraph" data-sb-validations="required"></textarea> 
-                                <div class="invalid-feedback" data-sb-feedback="cover-letter:required">Your eason to participate is very important to us!</div>
-                            </div> 
-                            
-                            <!-- Email address input-->
-                            <div class="form-group">
-                                <label for="email">Email address</label>
-                                <input class="form-control" id="email" name="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                            </div>
-                            <!-- Phone number input-->
-                            <div class="form-group">
-                                <label for="phone">Phone number</label>
-                                <input class="form-control" id="phone" name="phone" type="tel" placeholder="+91" data-sb-validations="required" /> 
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                            </div>
-                            <!-- PaymentID-->
-                            <div class="form-group">
-                                <label for:"payment">Gpay Payment ID</label>
-                                <input class="form-control" id="payment" name="payment" placeholder="Enter your Payment ID" data-sb-validations="required" /> 
-                                <div class="invalid-feedback" data-sb-feedback="payment:required">Please pay to submit the form</div><br>
-                                
-                            <div class="form-group">
-                                <label for:"payment-proof">Screenshot of payment</label>
-                                <input type="file" name="attachment" accept="image/png, image/jpeg">
-                                <input class="form-control" id="payment-proof" name="payment-proof" placeholder="Upload a screenshot" data-sb-validations="required" /> 
-                                <div class="invalid-feedback" data-sb-feedback="payment-proof:required">Please pay to submit the form</div>
-                            </div><br><br>
-                                
-                           
-                            <!-- Submit Button-->
-                            <div class="d-grid">
-                            <button class="btn btn-primary btn-x1" id="submitButton" type="submit">Submit</button></div>
-                            </form>
-                    </div>
-                </div>
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-4 text-center mb-5 mb-lg-0">
-                        <br><br>
-                        <a class="btn btn-primary btn-xl" href="https://gpay.app.goo.gl/vXQNNf">Pay Now</a><br>
-                        <i class="bi-phone fs-2 mb-3 text-muted"></i>
-                        <div>+91 9360965454</div><br><div>+91 9003189324</div><br><div>zeldaglobal.co@gmail.com</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        
         <!-- Footer-->
         <footer class="bg-light py-5">
             <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2022 - Zelda Inc</div></div>
+            <div class="container px-4 px-lg-5"><div class="small text-center text-muted"><i class="bi-phone text-muted"></i> +91 9360965454 / +91 9003189324</i></div></div>
+            <div class="container px-4 px-lg-5"><div class="small text-center text-muted">zeldaglobal.co@gmail.com</div></div>
         </footer>
         <!-- Bootstrap core JS-->
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
