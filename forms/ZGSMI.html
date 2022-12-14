@@ -31,8 +31,10 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet'>
         <style>
+        * {
+          font-family: 'Dosis';
+        } 
         body {
-            font-family: 'Dosis';
             background-image: linear-gradient(to right, white , grey);
         }
         .center {
@@ -41,7 +43,9 @@
           align-items: center;
         }
         </style>
-
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </head>
     <body id="page-top"  class="justify-content-center">
         <!-- Navigation-->
@@ -85,7 +89,7 @@
                                       <div class="input-group-prepend">
                                         <div class="input-group-text">Age</div>
                                       </div> 
-                                      <input id="text1" name="text1" type="text" class="form-control">
+                                      <input id="text1" name="text1" type="text" class="form-control" required="required">
                                     </div>
                                   </div>
                                 </div>
@@ -95,7 +99,7 @@
                                       <div class="input-group-prepend">
                                         <div class="input-group-text">Height</div>
                                       </div> 
-                                      <input id="text2" name="text2" type="text" class="form-control">
+                                      <input id="text2" name="text2" type="text" class="form-control" required="required">
                                     </div>
                                   </div>
                                 </div>
@@ -105,7 +109,7 @@
                                       <div class="input-group-prepend">
                                         <div class="input-group-text">Weight</div>
                                       </div> 
-                                      <input id="text3" name="text3" type="text" class="form-control">
+                                      <input id="text3" name="text3" type="text" class="form-control" required="required">
                                     </div>
                                   </div>
                                 </div>
@@ -115,7 +119,7 @@
                                       <div class="input-group-prepend">
                                         <div class="input-group-text">Sex</div>
                                       </div> 
-                                      <input id="text4" name="text4" type="text" class="form-control">
+                                      <input id="text4" name="text4" type="text" class="form-control" required="required">
                                     </div>
                                   </div>
                                 </div>
@@ -125,7 +129,7 @@
                                       <div class="input-group-prepend">
                                         <div class="input-group-text">Native City</div>
                                       </div> 
-                                      <input id="text5" name="text5" type="text" class="form-control">
+                                      <input id="text5" name="text5" type="text" class="form-control" required="required">
                                     </div>
                                   </div>
                                 </div>
@@ -135,7 +139,7 @@
                                       <div class="input-group-prepend">
                                         <div class="input-group-text">Email</div>
                                       </div> 
-                                      <input id="text6" name="text6" type="text" class="form-control">
+                                      <input id="text6" name="text6" type="text" class="form-control" required="required">
                                     </div>
                                   </div>
                                 </div>
@@ -145,7 +149,7 @@
                                       <div class="input-group-prepend">
                                         <div class="input-group-text">Phone No.</div>
                                       </div> 
-                                      <input id="text7" name="text7" type="text" class="form-control">
+                                      <input id="text7" name="text7" type="text" class="form-control" required="required">
                                     </div>
                                   </div>
                                 </div>
@@ -163,8 +167,18 @@
                                 </div>
                                 <div class="input-group mb-3">
                                   <div class="custom-file">
-                                    <input type="file" class="custom-file-input" id="inputGroupFile03" aria-describedby="inputGroupFileAddon03">
+                                    <input type="file" class="custom-file-input" id="inputGroupFile03" aria-describedby="inputGroupFileAddon03" required="required">
                                     <label class="custom-file-label" for="inputGroupFile03">Choose payment proof picture</label>
+                                  </div>
+                                </div>
+                                <div class="form-group row">
+                                  <div class="col">
+                                    <div class="custom-controls-stacked">
+                                      <div class="custom-control custom-checkbox">
+                                        <input name="acceptTerms" id="acceptTerms_0" type="checkbox" required="required" class="custom-control-input" value="accept"> 
+                                        <label for="acceptTerms_0" class="custom-control-label">I have read and accept the <span id="tnc" onclick='$("#exampleModalLong").modal();' style="color: blue;"><u>Terms and Conditions</u></span></label>
+                                      </div>
+                                    </div>
                                   </div>
                                 </div>
                                 <div class="form-group row">
@@ -177,6 +191,56 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <!-- T&C Modal -->
+        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Terms and Conditions</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>
+                The contest is open for women and men.<br>
+                Participants must be at least 18 years of age upon the competition year.<br>
+                The participants must be of good health and moral character.<br>
+                The participants must have not been convicted of any criminal act.<br>
+                The decision of Judges will be final and binding.<br>
+                The participants must behave in a manner befitting the title of “Zelda Global Supermodel India”. The participants will have to participate in a disciplined and diligent manner throughout as per the schedule given.<br>
+                Incorrect information will result in disqualification, whether discovered prior to, during, or after the event.<br>
+                Participants must conduct themselves in a proper manner and portray high moral standards. Candidates will not consume any alcoholic beverages, use illegal drugs or publicly smoke or use foul language anytime or misconduct themselves during the course of the entire contest which can lead to their disqualification.<br>
+                Entries received after the last date will not be accepted. The Organizers will not be responsible for entries that are lost or delayed in transit.<br>
+                Entries received until the last date will be allowed to participate in the auditions from which the finalists will be selected. <br>
+                The entries will be judged by a panel of eminent judges. The decisions of the judges will be final and binding to every participant. No correspondence in connection with the procedure adopted or the result will be entertained.<br>
+                In the event of any dispute, Organizers’ decision will be final and binding to the participant.<br>
+                The Candidates agree to abide by all rules and regulations which may  change from time to time by the Organizers and he/she shall have no objection to the same whatsoever.<br>
+                The schedule of the event's qualification rounds are subject to change at the absolute discretion of the Organizers, and the Candidates shall raise no questions whatsoever in this regard.<br>
+                Auditions can take place either online or offline. The Co. has the sole right to take the decision to take the Auditions Online or Virtually.<br>
+                The application processing fee/ Registration fee is Non-Refundable under all circumstances. The Audition round expenses (Travel) will have to be borne by the participant.<br>
+                The Fee paid towards Auditions (online/offline/Virtually/Digitally) is Non-Refundable.<br>
+                Only the applicant will be allowed inside the designated venue of the preliminaries.<br>
+                The Organizers have all the right to cancel, reschedule, postpone, and amend the show.<br>
+                If selected, the contestant must be available for appearances whenever required by ZELDA GLOBAL SUPERMODEL INDIA during any event. Contestants will be informed in advance of such appearances. The company will hold all the rights of ZELDA GLOBAL SUPERMODEL INDIA Titles. Contestants will not be entitled to use ZELDA GLOBAL SUPERMODEL INDIA title and sash during any promotional activity other than ZELDA GLOBAL SUPERMODEL INDIA.
+                There is a fee at the entry-level and once selected, there will be a certain fee (Grooming and Training) to enter into the next levels also. Contestants must agrees to duly pay the said fees for the second level as and when required by the Company. If the contestant fails to pay the said fees within the time period stipulated by the Company the contestant for the said Competition will be subject to cancellation as per the Company’s policy.
+                Fee once paid by the contestant for next level and so on will be non-refundable in any circumstances. Neither full nor partial fee will be refundable.<br>
+                For further information / clarifications, contact on Email: zeldaglobal.co@gmail.com
+                <br>
+                <br>
+                Zelda Global shall introduce various offers, schemes, or contests at different times. The terms and conditions for such Contests shall be separately available on the Site.<br>
+                Zelda Global reserves the right to change/modify/add/delete any of the terms and conditions prevailing on the different promotional schemes it introduces in the market from time to time. Zelda Global, at its discretion, can withdraw a particular scheme from the website or market.
+                In case of any query pertaining to the use of coupons and/or credit notes or regarding the schemes, please email at zeldaglobal.co@gmail.com.<br>
+                While participating in any Zelda Global contest, you hereby agree to release and hold Zelda Global (and its officers, directors, agents, subsidiaries, affiliates, joint ventures, and employees) harmless from any claim or demand, but not limited to reasonable attorneys’ fees, or arising out of or related to your participation in the said contest.<br>
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
         </div>
     </body>
 </html>
