@@ -11413,6 +11413,12 @@ hr.divider-light {
   }
 }
 
+.bottomtext {
+  position:absolute !important;
+  bottom:0;
+  text-align: center;
+}
+
 header.masthead {
   padding-top: 10rem;
   height: 100%;
